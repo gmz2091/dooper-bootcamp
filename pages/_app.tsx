@@ -4,6 +4,7 @@ import Head from "next/head";
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
+import Nav from "@src/components/Nav";
 import createEmotionCache from "../src/createEmotionCache";
 import theme from "../src/theme";
 
@@ -21,6 +22,9 @@ export default function MyApp(props: MyAppProps) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
+      <header>
+        <Nav />
+      </header>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
