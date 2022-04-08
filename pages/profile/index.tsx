@@ -1,8 +1,7 @@
-import { NextPage } from "next";
-import React from "react";
+import { NextPage } from 'next'
 
 const Profile: NextPage = () => {
-  return <div>Profile</div>;
-};
+  return <div>Profile</div>
+}
 
-export default Profile;
+export default Profile
