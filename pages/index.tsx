@@ -4,8 +4,8 @@ import { Typography } from '@mui/material'
 const Home: NextPage = () => {
   return (
     <>
-      <Typography variant="h1" color="primary">
-        Hello World!
+      <Typography variant="h1" color="dark">
+        Bootcamp Dooper
       </Typography>
     </>
   )

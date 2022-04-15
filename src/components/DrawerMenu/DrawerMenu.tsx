@@ -25,7 +25,6 @@ const TemporaryDrawer = ({ isOpen, setClose, routes }: DrawerMenuProps) => {
   const list = (anchor: any) => (
     <Box
       sx={{ width: 250 }}
-      role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
