@@ -4,7 +4,7 @@ import { Box } from '@mui/material'
 import { Navbar } from '../Navb'
 
 interface LayoutProps {
-  title?: string;
+  title?: string
 }
 
 export const Layout: FC<LayoutProps> = ({
@@ -17,7 +17,7 @@ export const Layout: FC<LayoutProps> = ({
         <title>{title}</title>
       </Head>
       <Navbar />
-      <Box sx={{ padding: '10px 20px' }}>{children}</Box>
+      <Box padding={5}>{children}</Box>
     </Box>
   )
 }
