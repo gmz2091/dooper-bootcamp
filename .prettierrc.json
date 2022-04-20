@@ -1,7 +1,8 @@
 {
   "trailingComma": "none",
   "tabWidth": 2,
-  "semi": true,
+  "semi": false,
+  "semiColon": false,
   "singleQuote": false,
   "importOrder": ["^@mui/(.*)$", "^@src/(.*)$", "^[./]"],
   "importOrderSeparation": false,
