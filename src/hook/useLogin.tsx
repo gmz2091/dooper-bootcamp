@@ -1,6 +1,7 @@
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { string } from 'yup'
+import { FieldsProps } from '@src/interfaces/interface'
 
 const validationSchema = Yup.object().shape({
   email: string()
@@ -20,12 +21,13 @@ const validationSchema = Yup.object().shape({
     .required('Password is required')
 })
 
-const objectFromArray = (fields: any[], key: string) => {
+const objectFromArray = (fields: FieldsProps[], key: string) => {
   const mappedProps = fields.map((field) => {
     if (key !== 'validate') {
-      return [field.id, field[key]]
+      return [field.id, field[key as keyof FieldsProps]]
     }
-    const validation = validationSchema[field.validate]
+    const validation: any =
+      validationSchema[field.validate as keyof typeof validationSchema]
     return [field.id, field.required ? validation.required() : validation]
   })
 

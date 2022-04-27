@@ -33,3 +33,13 @@ export interface TextFieldsProps {
   required?: boolean
   variant?: 'outlined' | 'standard'
 }
+
+export interface FieldsProps {
+  id: string
+  label: string
+  initialValue: string
+  placeholder: string
+  validate: string
+  required: boolean
+  type: string
+}
