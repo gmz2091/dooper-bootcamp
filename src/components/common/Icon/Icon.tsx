@@ -3,10 +3,11 @@ import * as MaterialDesign from 'react-icons/md'
 import { IconView } from './styles'
 
 interface Props {
-  id: string
+  id: keyof typeof MaterialDesign
+  error?: boolean
 }
-const Icon = ({ id }: Props) => {
-  function icon (iconName: string = 'MdFingerprint') {
+const Icon = ({ id, error }: Props) => {
+  function icon (iconName: keyof typeof MaterialDesign = 'MdFingerprint') {
     const mdIcon = createElement(MaterialDesign[iconName])
     if (mdIcon.type === undefined) {
       return createElement(MaterialDesign['MdApi'])

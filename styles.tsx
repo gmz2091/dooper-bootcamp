@@ -24,17 +24,15 @@ export const InputField = styled(TextField)`
   }
 `
 
-export const IconWrapper = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 12px;
-  transform: translateY(-50%);
-  margin: auto;
-  transition: all 0.3s ease;
-  opacity: 0.5;
-  cursor: pointer;
-  &:hover {
-    opacity: 1;
+export const IconWrapper = styled(Box)({
+  position: 'absolute',
+  right: '12px',
+  transform: 'translateY(-50%)',
+  top: '50%',
+  cursor: 'pointer',
+  transition: 'all 0.3s ease-in-out',
+  opacity: '0.5',
+  '&:hover': {
+    opacity: '1'
   }
-`
+})

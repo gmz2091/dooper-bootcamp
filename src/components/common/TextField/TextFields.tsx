@@ -29,7 +29,12 @@ const TextFields = ({ field, formik }: any) => {
             setType(!type)
           }}
         >
-          {field.icon && <Icon id={field.iconName} />}
+          {field.icon && (
+            <Icon
+              id={field.iconName}
+              error={touched[field.id] && !!errors[field.id]}
+            />
+          )}
         </IconWrapper>
       </InputWrapper>
     </>

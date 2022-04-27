@@ -15,8 +15,6 @@ export const fieldsLogin = [
     placeholder: 'Password',
     validate: 'password',
     required: true,
-    type: 'password',
-    icon: true,
-    iconName: 'MdOutlineRemoveRedEye'
+    type: 'password'
   }
 ]
