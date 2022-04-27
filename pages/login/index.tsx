@@ -1,7 +1,12 @@
 import { NextPage } from 'next'
+import Form from '@src/components/Form'
 
 const Login: NextPage = () => {
-  return <div>Login</div>
+  return (
+    <>
+      <Form title="Login" />
+    </>
+  )
 }
 
 export default Login
